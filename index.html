@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"></head>
+<body>
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+      
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+      
+              <div class="card" id="chat1" style="border-radius: 15px;">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+                  style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                  <i class="fas fa-angle-left"></i>
+                  <p class="mb-0 fw-bold">Live chat</p>
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="card-body " style="overflow: auto; min-height: 80vh;">
+      
+                  <!-- <div class="d-flex flex-row justify-content-start mb-4">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div class="p-2 pt-0 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                      <div><strong class="font-weight-bold mb-1 ">Sharon Lessman</strong></div>
+                      <p class="small mt-1 mb-1">Hello and thank you for visiting MDBootstrap. Please click the video
+                        below.</p>
+                    </div>
+                  </div> -->
+      
+                  <!-- <div class="d-flex flex-row justify-content-end mb-4">
+                    <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                      <p class="small mb-0">Thank you, I really like your product.</p>
+                    </div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                  </div> -->
+
+                   <div class="d-flex flex-row justify-content-center mb-4">
+                     <span class="badge bg-secondary">Welcome to OSM group</span>
+                   </div>
+      
+                  <!-- <div class="d-flex flex-row justify-content-start mb-4">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div class="ms-3" style="border-radius: 15px;">
+                      <div class="bg-image">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/screenshot1.webp"
+                          style="border-radius: 15px;" alt="video">
+                        <a href="#!">
+                          <div class="mask"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div> -->
+      
+                  <div class="d-flex flex-row justify-content-start mb-4">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                      alt="avatar 1" style="width: 45px; height: 100%;">
+                    <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                      <p class="small mb-0">...</p>
+                    </div>
+                  </div>
+                </div>
+                <form action="#" method="post" class="d-flex flex-row align-items-center " id="send" >
+                  <input type="text" class="form-control form-control-lg" id="message"
+                    placeholder=" " name="message"  >
+                    
+                    <button  class="btn btn-primary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg></button>
+                  
+                </form>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+
+
+
+
+   
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
